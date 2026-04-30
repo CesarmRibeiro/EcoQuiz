@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Qual é o principal objetivo do ODS 4 da ONU?",
+    "opcoes": [
+      "Erradicar a pobreza extrema no mundo",
+      "Assegurar educação inclusiva, equitativa e de qualidade para todos",
+      "Garantir acesso à água potável e saneamento",
+      "Promover o crescimento econômico sustentável"
+    ],
+    "correta": 1,
+    "explicacao": "O ODS 4 busca assegurar educação inclusiva, equitativa e de qualidade e promover oportunidades de aprendizagem ao longo da vida para todos até 2030.",
+    "categoria": "Conceito Geral"
+  },
+  {
+    "id": 2,
+    "pergunta": "Até que ano os países signatários da ONU se comprometeram a atingir as metas do ODS 4?",
+    "opcoes": ["2025", "2030", "2035", "2050"],
+    "correta": 1,
+    "explicacao": "A Agenda 2030 estabelece o ano de 2030 como prazo para que todas as metas dos 17 ODS sejam alcançadas pelos países membros da ONU.",
+    "categoria": "Agenda 2030"
+  },
+  {
+    "id": 3,
+    "pergunta": "Qual das alternativas NÃO é uma meta do ODS 4?",
+    "opcoes": [
+      "Garantir que todas as crianças completem o ensino primário e secundário",
+      "Eliminar as disparidades de gênero na educação",
+      "Construir pelo menos uma universidade em cada país em desenvolvimento",
+      "Assegurar acesso à educação técnica e profissional de qualidade"
+    ],
+    "correta": 2,
+    "explicacao": "O ODS 4 foca em acesso, qualidade e equidade na educação — não estabelece metas quantitativas de construção de instituições específicas.",
+    "categoria": "Metas"
+  },
+  {
+    "id": 4,
+    "pergunta": "O conceito de 'aprendizagem ao longo da vida' (lifelong learning), central no ODS 4, significa:",
+    "opcoes": [
+      "Aprender somente durante a infância e adolescência",
+      "Frequentar uma universidade por toda a vida",
+      "Buscar conhecimento e desenvolvimento em todas as fases da vida",
+      "Estudar apenas disciplinas técnicas e profissionais"
+    ],
+    "correta": 2,
+    "explicacao": "Lifelong learning é o conceito de que o aprendizado deve ocorrer de forma contínua em todas as etapas da vida, desde a primeira infância até a velhice.",
+    "categoria": "Conceito"
+  },
+  {
+    "id": 5,
+    "pergunta": "Segundo dados da UNESCO, quantas crianças em idade escolar ainda estavam fora da escola antes da pandemia de COVID-19?",
+    "opcoes": [
+      "Cerca de 10 milhões",
+      "Cerca de 50 milhões",
+      "Cerca de 258 milhões",
+      "Cerca de 500 milhões"
+    ],
+    "correta": 2,
+    "explicacao": "A UNESCO estimou que, antes da pandemia, aproximadamente 258 milhões de crianças e jovens estavam fora da escola — um dos maiores desafios para o ODS 4.",
+    "categoria": "Dados Globais"
+  },
+  {
+    "id": 6,
+    "pergunta": "Qual sigla representa o programa da ONU dedicado à educação, ciência e cultura, fundamental para o acompanhamento do ODS 4?",
+    "opcoes": ["UNICEF", "UNESCO", "PNUD", "OMS"],
+    "correta": 1,
+    "explicacao": "A UNESCO (Organização das Nações Unidas para a Educação, a Ciência e a Cultura) é o principal órgão da ONU responsável por monitorar e apoiar o cumprimento do ODS 4.",
+    "categoria": "Organismos"
+  },
+  {
+    "id": 7,
+    "pergunta": "A equidade na educação, prevista no ODS 4, inclui garantir acesso igualitário para:",
+    "opcoes": [
+      "Apenas crianças de países desenvolvidos",
+      "Somente estudantes do ensino superior",
+      "Pessoas com deficiência, populações vulneráveis e minorias",
+      "Exclusivamente alunos com desempenho acadêmico elevado"
+    ],
+    "correta": 2,
+    "explicacao": "O ODS 4 é explícito em garantir educação inclusiva e equitativa para todos, com atenção especial a pessoas com deficiência, comunidades vulneráveis, povos indígenas e minorias.",
+    "categoria": "Equidade"
+  },
+  {
+    "id": 8,
+    "pergunta": "O ODS 4 também contempla metas para professores. Qual das alternativas reflete corretamente uma dessas metas?",
+    "opcoes": [
+      "Reduzir o número de professores para otimizar custos",
+      "Aumentar o número de professores qualificados, especialmente em países em desenvolvimento",
+      "Substituir professores por tecnologia de inteligência artificial",
+      "Concentrar professores qualificados apenas em capitais"
+    ],
+    "correta": 1,
+    "explicacao": "A meta 4.c do ODS 4 prevê aumentar substancialmente o número de professores qualificados, inclusive por meio da cooperação internacional, especialmente nos países em desenvolvimento.",
+    "categoria": "Professores"
+  },
+  {
+    "id": 9,
+    "pergunta": "A educação pré-escolar (primeira infância) é abordada no ODS 4 por ser considerada:",
+    "opcoes": [
+      "Uma etapa opcional, de responsabilidade exclusiva das famílias",
+      "Fundamental para o desenvolvimento cognitivo e base para toda aprendizagem futura",
+      "Relevante apenas para crianças com necessidades especiais",
+      "Uma prioridade somente para países com alta renda"
+    ],
+    "correta": 1,
+    "explicacao": "A meta 4.2 do ODS 4 garante que todas as crianças tenham acesso ao desenvolvimento na primeira infância e à educação pré-escolar, reconhecida como base essencial da aprendizagem futura.",
+    "categoria": "Primeira Infância"
+  },
+  {
+    "id": 10,
+    "pergunta": "Qual das tecnologias a seguir está mais alinhada à promoção do ODS 4 em comunidades remotas e sem acesso à internet?",
+    "opcoes": [
+      "Jogos de realidade virtual de alta performance",
+      "Rádio educativa e TV aberta com conteúdo pedagógico",
+      "Plataformas de streaming pagas",
+      "Aplicativos que exigem conexão de alta velocidade"
+    ],
+    "correta": 1,
+    "explicacao": "Em contextos com acesso limitado à internet, tecnologias como rádio educativa e TV aberta são ferramentas acessíveis e eficazes para levar educação de qualidade a comunidades remotas, em alinhamento ao ODS 4.",
+    "categoria": "Tecnologia & Inclusão"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EcoQuiz/static/css/main.eaadc053.css",
+    "main.js": "/EcoQuiz/static/js/main.2a18a4b1.js",
+    "index.html": "/EcoQuiz/index.html",
+    "main.eaadc053.css.map": "/EcoQuiz/static/css/main.eaadc053.css.map",
+    "main.2a18a4b1.js.map": "/EcoQuiz/static/js/main.2a18a4b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaadc053.css",
+    "static/js/main.2a18a4b1.js"
+  ]
+}
