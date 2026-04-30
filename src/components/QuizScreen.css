@@ -1,0 +1,111 @@
+/* QuizScreen.css */
+.quiz-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 60%, #E0F2F1 100%);
+}
+
+/* Loading / erro */
+.quiz-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Header */
+.quiz-header {
+  background: linear-gradient(135deg, #1B5E20, #2E7D32);
+  padding: 12px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.18);
+}
+.quiz-score-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,.15);
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+.quiz-score-icon  { font-size: 1rem; }
+.quiz-score-val   { font-size: 1.2rem; font-weight: 800; color: #F9A825; }
+.quiz-score-label { font-size: .72rem; color: #A5D6A7; font-weight: 600; }
+
+/* Main */
+.quiz-main {
+  flex: 1;
+  padding: 30px 0 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.quiz-main .container { width: 100%; }
+
+/* Card */
+.quiz-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 36px;
+}
+
+/* Progress area */
+.quiz-progress-area { margin-bottom: 24px; }
+
+/* Question header */
+.quiz-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quiz-question-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.quiz-question-text { flex: 1; }
+
+.quiz-question {
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  font-weight: 600;
+  color: #1B5E20;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Opcoes */
+.quiz-opcoes { margin-bottom: 8px; }
+
+/* Explicação */
+.quiz-explicacao {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: .88rem;
+  line-height: 1.5;
+  color: #37474F;
+}
+.quiz-explicacao-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+.quiz-explicacao-acerto {
+  background: #E8F5E9;
+  border-left: 4px solid #2E7D32;
+}
+.quiz-explicacao-erro {
+  background: #FFF3E0;
+  border-left: 4px solid #E65100;
+}
+
+@media (max-width: 576px) {
+  .quiz-card { padding: 20px 16px; }
+  .quiz-question-body { flex-direction: column; gap: 10px; }
+}

@@ -1,0 +1,17 @@
+.timer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .2s;
+}
+.timer-svg { display: block; }
+.timer-label {
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-top: -2px;
+  transition: color .3s;
+}
+.timer-urgente {
+  animation: pulse .6s ease infinite;
+}

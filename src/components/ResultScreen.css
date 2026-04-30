@@ -1,0 +1,118 @@
+/* ResultScreen.css */
+.result-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 60%, #E0F2F1 100%);
+}
+
+.result-header {
+  background: linear-gradient(135deg, #1B5E20, #2E7D32);
+  padding: 14px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.18);
+}
+
+.result-main {
+  flex: 1;
+  padding: 36px 0 40px;
+}
+
+/* Card base */
+.result-card { padding: 28px 28px; }
+
+/* Badge classificação */
+.result-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-bottom: 14px;
+}
+.result-emoji { font-size: 1.6rem; }
+.result-label { font-size: 1.1rem; font-weight: 700; }
+
+.result-greeting {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1B5E20;
+  margin-bottom: 16px;
+}
+
+/* Score circular */
+.result-score-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0 16px;
+}
+
+.result-msg {
+  font-size: .9rem;
+  color: #546E7A;
+  line-height: 1.6;
+  padding: 0 8px;
+  margin-bottom: 6px;
+}
+
+/* Section title */
+.result-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1B5E20;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E8F5E9;
+}
+
+/* Categorias */
+.result-categoria { margin-bottom: 14px; }
+
+/* Histórico */
+.result-historico {
+  max-height: 440px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.result-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid transparent;
+}
+.result-item-ok  { background: #F1F8F1; border-color: #2E7D32; }
+.result-item-err { background: #FFF8F0; border-color: #E65100; }
+
+.result-item-num { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+.result-item-body { flex: 1; }
+
+.result-item-pergunta {
+  font-size: .82rem;
+  font-weight: 600;
+  color: #37474F;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.result-item-sua {
+  font-size: .78rem;
+  color: #B71C1C;
+  margin-bottom: 2px;
+}
+.result-item-certa {
+  font-size: .78rem;
+  color: #2E7D32;
+  margin-bottom: 4px;
+}
+.result-item-explicacao {
+  font-size: .76rem;
+  color: #78909C;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .result-card { padding: 18px 14px; }
+}

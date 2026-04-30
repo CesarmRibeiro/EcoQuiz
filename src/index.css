@@ -1,0 +1,118 @@
+/* ═══════════════════════════════════════════════════════════════
+   EcoQuiz – Global Styles
+   ODS 4: Educação de Qualidade
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --ods-green:       #1B5E20;
+  --ods-green-md:    #388E3C;
+  --ods-green-lt:    #A5D6A7;
+  --ods-green-pale:  #E8F5E9;
+  --ods-amber:       #F9A825;
+  --ods-amber-lt:    #FFF8E1;
+  --ods-teal:        #00695C;
+  --ods-red:         #B71C1C;
+  --ods-red-lt:      #FFEBEE;
+  --gray-dark:       #37474F;
+  --gray-mid:        #546E7A;
+  --gray-light:      #ECEFF1;
+  --white:           #FFFFFF;
+  --shadow-sm:       0 2px 8px rgba(0,0,0,.10);
+  --shadow-md:       0 4px 20px rgba(0,0,0,.14);
+  --radius:          14px;
+  --radius-sm:       8px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 50%, #E0F2F1 100%);
+  min-height: 100vh;
+  color: var(--gray-dark);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--gray-light); }
+::-webkit-scrollbar-thumb { background: var(--ods-green-lt); border-radius: 3px; }
+
+/* ── Animations ─────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50%      { transform: scale(1.06); }
+}
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60% { transform: translateX(-6px); }
+  40%,80% { transform: translateX(6px); }
+}
+@keyframes countdown {
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: 220; }
+}
+
+.animate-fadeInUp  { animation: fadeInUp .45s ease both; }
+.animate-fadeIn    { animation: fadeIn .35s ease both; }
+.animate-pulse     { animation: pulse .6s ease; }
+.animate-shake     { animation: shake .4s ease; }
+
+/* ── Card base ──────────────────────────────────────────────── */
+.eco-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  border: none;
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.btn-eco-primary {
+  background: linear-gradient(135deg, var(--ods-green-md), var(--ods-green));
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  letter-spacing: .4px;
+  transition: all .2s ease;
+  box-shadow: 0 3px 10px rgba(27,94,32,.30);
+}
+.btn-eco-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--ods-green), #0a3d0e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(27,94,32,.38);
+  color: var(--white);
+}
+.btn-eco-primary:disabled { opacity: .55; cursor: not-allowed; }
+
+.btn-eco-outline {
+  border: 2px solid var(--ods-green-md);
+  color: var(--ods-green-md);
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: all .2s ease;
+}
+.btn-eco-outline:hover {
+  background: var(--ods-green-pale);
+  border-color: var(--ods-green);
+  color: var(--ods-green);
+}
+
+/* ── Badge ODS ──────────────────────────────────────────────── */
+.badge-ods {
+  background: var(--ods-amber);
+  color: var(--gray-dark);
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 4px 12px;
+}
