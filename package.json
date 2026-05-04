@@ -1,12 +1,15 @@
 {
   "name": "ecoquiz",
   "version": "1.0.0",
+  "homepage": "https://CesarmRibeiro.github.io/EcoQuiz",
   "private": true,
   "description": "EcoQuiz - Jogo Web Interativo sobre ODS 4: Educação de Qualidade",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false"
+    "test": "react-scripts test --watchAll=false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^14.6.1"
+    "@testing-library/user-event": "^14.6.1",
+    "gh-pages": "^6.3.0"
   }
 }

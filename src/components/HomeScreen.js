@@ -167,7 +167,7 @@ function HomeScreen({ onIniciar }) {
       <footer className="home-footer">
         <div className="container text-center">
           <p className="mb-0" style={{ fontSize: '.78rem', opacity: .75 }}>
-            Desenvolvido com ⚛️ React + Bootstrap 5 · Projeto A3 – Engenharia de Software · 2025
+            Desenvolvido por Cesar , Vinicius, Julia e Kaue · Projeto A3 – Engenharia de Software · 2026
           </p>
         </div>
       </footer>

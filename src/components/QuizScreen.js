@@ -31,18 +31,42 @@ function QuizScreen({ jogador, onFinalizar, onSair }) {
   const [opcaoEscolhida, setOpcaoEscolhida] = useState(null);
   const [resetTimer,   setResetTimer]   = useState(0); // key para resetar o Timer
 
-  // ── Requisição HTTP via axios (cumpre requisito do projeto) ──
+// ── Requisição HTTP via axios (cumpre requisito do projeto) ──
   useEffect(() => {
     setEstado('carregando');
-    axios.get('/questions.json')
+    axios.get(`${process.env.PUBLIC_URL}/questions.json`)
       .then((res) => {
-        // Embaralha as perguntas para variedade
-        const embaralhadas = [...res.data].sort(() => Math.random() - .5);
+        
+        // Algoritmo robusto de embaralhamento (Fisher-Yates)
+        const embaralhar = (lista) => {
+          const arr = [...lista];
+          for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+          }
+          return arr;
+        };
+
+        // 1. Prepara e embaralha as OPÇÕES de cada pergunta
+        const perguntasProntas = res.data.map(pergunta => {
+          const textoCorreto = pergunta.opcoes[pergunta.correta];
+          const opcoesEmbaralhadas = embaralhar(pergunta.opcoes);
+          const novoIndiceCorreto = opcoesEmbaralhadas.indexOf(textoCorreto);
+
+          return {
+            ...pergunta,
+            opcoes: opcoesEmbaralhadas,
+            correta: novoIndiceCorreto
+          };
+        });
+
+        // 2. Embaralha a ordem das PERGUNTAS no quiz
+        const embaralhadas = embaralhar(perguntasProntas);
+        
         setPerguntas(embaralhadas);
         setEstado('jogando');
       })
       .catch((err) => {
-        // H5 – Prevenção de erros: mensagem clara ao usuário
         console.error('Erro ao carregar perguntas:', err);
         setErroHttp('Não foi possível carregar as perguntas. Verifique sua conexão e tente novamente.');
         setEstado('erro');
