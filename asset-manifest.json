@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EcoQuiz/static/css/main.eaadc053.css",
-    "main.js": "/EcoQuiz/static/js/main.18d2bea6.js",
+    "main.js": "/EcoQuiz/static/js/main.341423a3.js",
     "index.html": "/EcoQuiz/index.html",
     "main.eaadc053.css.map": "/EcoQuiz/static/css/main.eaadc053.css.map",
-    "main.18d2bea6.js.map": "/EcoQuiz/static/js/main.18d2bea6.js.map"
+    "main.341423a3.js.map": "/EcoQuiz/static/js/main.341423a3.js.map"
   },
   "entrypoints": [
     "static/css/main.eaadc053.css",
-    "static/js/main.18d2bea6.js"
+    "static/js/main.341423a3.js"
   ]
 }
